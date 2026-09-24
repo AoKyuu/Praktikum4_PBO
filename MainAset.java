@@ -13,7 +13,7 @@ public class MainAset {
         Manajemen.tampilkanSemuaAset();
         
         System.out.println("Hapus Aset ID");
-        Manajemen.hapusAset("005");        
+        Manajemen.hapusAset("004");        
         
         System.out.println("\nSemua Aset Setelah Update dan Delete");
         Manajemen.tampilkanSemuaAset();

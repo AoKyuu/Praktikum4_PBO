@@ -11,8 +11,8 @@ public class ManajemenAset {
     }
         
     public void tampilkanSemuaAset() {
-        for (AsetIT A : daftarAset) {
-            A.TampilkanInfoAset();
+        for (AsetIT AIT : daftarAset) {
+            AIT.TampilkanInfoAset();
         }
     }
     
@@ -20,9 +20,9 @@ public class ManajemenAset {
         Iterator<AsetIT> Iterator = daftarAset.iterator();
         
         while (Iterator.hasNext()) {
-            AsetIT A = Iterator.next();
+            AsetIT AIT = Iterator.next();
             
-            if (A.IdAset.equals(IdAset)) {
+            if (AIT.IdAset.equals(IdAset)) {
                 Iterator.remove();
                 System.out.println("Aset dengan ID: " + IdAset + " " + "telah dihapus");
                 return;
