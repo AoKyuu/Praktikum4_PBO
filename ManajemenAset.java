@@ -24,11 +24,11 @@ public class ManajemenAset {
             
             if (A.IdAset.equals(IdAset)) {
                 Iterator.remove();
-                System.out.println("Aset dengan ID: " + IdAset + "telah dihapus");
+                System.out.println("Aset dengan ID: " + IdAset + " " + "telah dihapus");
                 return;
             }
         }
         
-        System.out.println("ID aset " + IdAset + "tidak ditemukan");
+        System.out.println("ID aset " + IdAset + " " + "tidak ditemukan");
     }
 }
