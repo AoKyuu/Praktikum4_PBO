@@ -71,6 +71,13 @@ public class ManajemenAset {
     }
 }
 ```
+Class `ManajemenAset` digunakan untuk mengelola kumpulan object `AsetIT`. Pada bagian awal terdapat `import java.util.ArrayList`, `import java.util.List`, dan `import java.util.Iterator` yang digunakan untuk menyediakan fitur `ArrayList`, `List`, dan `Iterator`. Kemudian `List<AsetIT> daftarAset = new ArrayList<>()`; digunakan untuk membuat sebuah list bernama `daftarAset` yang dapat menyimpan object bertipe `AsetIT`. Dengan demikian, satu `daftarAset` dapat menampung beberapa data aset.
+
+Method `tambahAset(AsetIT asetbaru)` digunakan untuk menambahkan object `AsetIT` ke dalam `daftarAset`. Parameter `asetbaru` digunakan untuk menerima object aset yang dikirim ketika method dipanggil. Object tersebut kemudian dimasukkan ke dalam list menggunakan `daftarAset.add(asetbaru)`. Jadi, method ini berfungsi sebagai proses penambahan data aset ke dalam daftar.
+
+Method `tampilkanSemuaAset()` digunakan untuk menampilkan seluruh aset yang tersimpan dalam `daftarAset`. Proses tersebut menggunakan _for-each_ dengan `AIT` sebagai variabel yang mewakili setiap object `AsetIT` yang terdapat di dalam list. Pada setiap perulangan, `AIT.TampilkanInfoAset()` dipanggil untuk menampilkan informasi dari aset tersebut. Dengan cara ini, seluruh object yang ada di dalam `daftarAset` dapat ditampilkan satu per satu.
+
+Method `hapusAset(String IdAset)` digunakan untuk menghapus aset berdasarkan ID yang diberikan melalui parameter `IdAset`. Di dalamnya dibuat object `Iterator<AsetIT>` yang mengambil iterator dari `daftarAset`. Perulangan `while (Iterator.hasNext())` digunakan untuk memeriksa setiap object yang masih tersedia dalam list, kemudian `Iterator.next()` mengambil object berikutnya dan menyimpannya ke variabel `AIT`. Selanjutnya, `AIT.IdAset.equals(IdAset)` digunakan untuk membandingkan ID aset yang sedang diperiksa dengan ID yang diberikan kepada method. Jika ID sesuai, `Iterator.remove()` digunakan untuk menghapus aset tersebut dari list, kemudian program menampilkan pesan bahwa aset telah dihapus dan `return` menghentikan method. Jika seluruh data telah diperiksa tetapi tidak ada ID yang sesuai, program menjalankan `System.out.println()` terakhir untuk menampilkan pesan bahwa ID aset tidak ditemukan.
 
 ### MainAset.java
 ```java
