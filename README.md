@@ -109,5 +109,11 @@ Class `MainAset` digunakan sebagai class utama untuk menjalankan program pengelo
 
 Selanjutnya, empat object `AsetIT` dibuat menggunakan constructor parameterized dan langsung dikirimkan sebagai parameter ke method `tambahAset()`. Setiap object memiliki ID, nama perangkat, lokasi, dan status kondisi yang berbeda. Data tersebut kemudian dimasukkan ke dalam `daftarAset` melalui method `tambahAset()`. Setelah seluruh aset ditambahkan, `System.out.println("Semua Aset");` digunakan untuk memberikan keterangan pada output, kemudian `Manajemen.tampilkanSemuaAset();` dipanggil untuk menampilkan seluruh aset yang tersimpan.
 ### Output Program
+<img width="461" height="320" alt="Screenshot 2026-09-26 060629" src="https://github.com/user-attachments/assets/0d7822e5-0583-4128-8c56-8467532d6619" />
 
 ### Penjelasan Output
+Output tersebut menunjukkan hasil eksekusi program dari proses penambahan, penampilan, dan penghapusan data aset IT. Pada bagian awal dengan keterangan “Semua Aset”, ditampilkan empat object `AsetIT` yang sebelumnya telah ditambahkan melalui method `tambahAset()`. Data tersebut terdiri dari ID `001` dengan perangkat Server yang berada di Lab Komputer dan memiliki kondisi Baik, ID `002` dengan perangkat Router yang berada di Ruang 17 dan memiliki kondisi Rusak, ID `003` dengan perangkat Switch yang berada di Perpustakaan dan memiliki kondisi Rusak, serta ID `004` dengan perangkat PC yang berada di Lab Komputer dan memiliki kondisi Baik.
+
+Selanjutnya, program menampilkan keterangan “Hapus Aset ID” dan menjalankan method `hapusAset("004")`. Method tersebut mencari aset dengan ID `004` menggunakan `Iterator`. Karena aset dengan ID tersebut ditemukan, aset kemudian dihapus dari `daftarAset`. Output “Aset dengan ID: 004 telah dihapus” menunjukkan bahwa proses penghapusan berhasil dilakukan.
+
+Setelah proses penghapusan selesai, program menampilkan kembali seluruh data dengan keterangan “Semua Aset Setelah Update dan Delete”. Pada bagian ini hanya terdapat tiga aset, yaitu ID `001`, `002`, dan `003`. Data dengan ID `004` sudah tidak ditampilkan karena telah berhasil dihapus dari `daftarAset`. Hal tersebut menunjukkan bahwa operasi penghapusan berdasarkan ID telah berjalan sesuai dengan proses yang dibuat pada program.
