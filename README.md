@@ -7,6 +7,7 @@
 
 ## Penjelasan Kode
 ### AsetIT.java
+```
 package Praktikum4.Tugas;
 
 public class AsetIT {
@@ -26,3 +27,4 @@ public class AsetIT {
         System.out.println(IdAset + "    " + NamaPerangkat + "             " + Lokasi + "     " + StatusKondisi);
     }
 }
+```
