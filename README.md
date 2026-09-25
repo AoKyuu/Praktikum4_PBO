@@ -28,6 +28,11 @@ public class AsetIT {
     }
 }
 ```
+Class `AsetIT` merupakan class yang digunakan sebagai rancangan untuk membuat object yang merepresentasikan sebuah aset IT. `Class` ini memiliki empat atribut, yaitu `IdAset` untuk menyimpan ID aset, `NamaPerangkat` untuk menyimpan nama perangkat, `Lokasi` untuk menyimpan lokasi aset, dan `StatusKondisi` untuk menyimpan kondisi aset. Keempat atribut tersebut bertipe `String` dan digunakan untuk menyimpan informasi dari setiap aset yang dibuat.
+
+Constructor `AsetIT` merupakan constructor parameterized yang memiliki empat parameter dengan nama yang sama seperti atribut class. Parameter tersebut digunakan untuk memberikan nilai awal pada atribut ketika object `AsetIT` dibuat. Kata kunci `this` digunakan untuk membedakan atribut milik object dengan parameter constructor, seperti pada `this.IdAset = IdAset`, yang berarti nilai parameter `IdAset` dimasukkan ke atribut `IdAset` milik object. Dengan constructor tersebut, object dapat langsung memiliki data aset ketika dibuat.
+
+Method `TampilkanInfoAset()` digunakan untuk menampilkan informasi aset ke layar. Method ini mengakses keempat atribut yang telah dimiliki object, kemudian menggabungkannya menggunakan operator `+` dan menampilkannya dengan `System.out.println()`. Dengan demikian, class `AsetIT` berfungsi sebagai rancangan object yang menyimpan data aset IT sekaligus menyediakan method untuk menampilkan informasi dari aset tersebut.
 
 ### ManajemenAset.java
 ```java
