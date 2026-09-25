@@ -105,7 +105,9 @@ public class MainAset {
     
 }
 ```
+Class `MainAset` digunakan sebagai class utama untuk menjalankan program pengelolaan aset. Di dalam method `main()`, dibuat object `ManajemenAset` melalui `ManajemenAset Manajemen = new ManajemenAset();`. Object tersebut digunakan untuk mengakses method yang terdapat pada class `ManajemenAset`, seperti menambahkan, menampilkan, dan menghapus aset.
 
+Selanjutnya, empat object `AsetIT` dibuat menggunakan constructor parameterized dan langsung dikirimkan sebagai parameter ke method `tambahAset()`. Setiap object memiliki ID, nama perangkat, lokasi, dan status kondisi yang berbeda. Data tersebut kemudian dimasukkan ke dalam `daftarAset` melalui method `tambahAset()`. Setelah seluruh aset ditambahkan, `System.out.println("Semua Aset");` digunakan untuk memberikan keterangan pada output, kemudian `Manajemen.tampilkanSemuaAset();` dipanggil untuk menampilkan seluruh aset yang tersimpan.
 ### Output Program
 
 ### Penjelasan Output
